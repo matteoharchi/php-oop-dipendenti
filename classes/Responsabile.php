@@ -13,4 +13,11 @@ class Responsabile extends Dipendente{
         $this->consultabile = $_consultabile;
         $this->consultabile($_consultabile);
     }
+        public function __toString(){
+        return "<br>Nome:" .$this->name
+        ."<br>Cognome: " .$this->surname
+        ."<br> ID: " .$this->idNumber .
+        "<br> Area di competenza: " .$this->areaCompetenza
+        ."<br>";
+    }
 }
